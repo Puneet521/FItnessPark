@@ -1,0 +1,72 @@
+.CONTACT_HEADER{
+    height: 50vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.CONTACT_HEADER img{
+    position: relative;
+    top: 80px;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    background-color: black;
+    opacity: 0.4;
+}
+.CONTACT_HEADING{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top:80px;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.CONTACT_HEADER p{
+    margin: 3rem 0;
+    padding: 0 1rem;
+}
+
+@media screen and (max-width:425px){
+    .CONTACT_HEADER p{
+        font-size: 0.8rem;
+    }
+}
+
+.CONTACT_WRAPPER{
+    display: flex;
+    height: 35vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+.CONTACT_WRAPPER a{
+    background-color: rgb(19,19,207);
+    border:2px solid transparent;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 2rem;
+    color: white;
+}
+.CONTACT_WRAPPER a:hover{
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+
+@media screen and (max-width:580px){
+    .CONTACT_WRAPPER{
+        flex-wrap: wrap;
+        height: 50vh;
+    }
+    .CONTACT_WRAPPER a{
+        margin: 1rem 2rem;
+    }
+}

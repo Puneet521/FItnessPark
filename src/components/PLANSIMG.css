@@ -1,0 +1,94 @@
+.PLAN_HEADER{
+    height: 50vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.PLAN_HEADER img{
+    position: relative;
+    top: 80px;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.PLANS_HEADING{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top:80px;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.PLAN_HEADER p{
+    margin: 3rem 0;
+    padding: 0 1rem;
+}
+
+@media screen and (max-width:425px){
+    .PLAN_HEADER p{
+        font-size: 0.8rem;
+    }
+}
+
+.PLANS_CONTAINER{
+    height: fit-content;
+    padding: 2rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.PLANS_BOX{
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: fit-content;
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+    gap:0.5rem;
+    margin: 2rem 1rem;
+    box-shadow: 5px 5px 5px white;
+}
+.PLANS_BOX2{
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: fit-content;
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+    gap:0.5rem;
+    margin: 3rem;
+    box-shadow: 5px 5px 5px white;
+}
+.Unactive{
+    color: white;
+    opacity: 0.4;
+}
+
+@media screen and (max-width:950px){
+    .PLANS_CONTAINER{
+        justify-content: space-evenly;
+    }
+    .PLANS_BOX2{
+        margin: 2rem 1rem;
+        width: 300px;
+    }
+    .PLANS_BOX{
+        width: 300px;
+    }
+    
+}

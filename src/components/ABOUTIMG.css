@@ -1,0 +1,228 @@
+.header{
+    height: 50vh;
+    width: 100%;
+    color: white;
+}
+.HEADERIMAGE{
+    position: relative;
+    top: 80px;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-color: black;
+    opacity: 0.7;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 5%;
+    height: 50vh;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.header p{
+    margin: 4rem 0;
+}
+
+@media screen and (max-width:500px){
+    .header p {
+        font-size: 0.8rem;
+    }
+    .header h1{
+        font-size: 1rem;
+    }
+    
+}
+.ABOUT_CONTAINER{
+    margin-top: 5rem;
+    color: white;
+ /*  border: 2px solid white; */
+    text-align: center;
+}
+.ABOUT{
+    display: flex;
+ /*  border: 2px solid red;  */
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 3rem 0;
+    justify-content: space-around;
+}
+.ABOUT_IMAGE{
+    margin: 3rem;
+}
+.ABOUT_IMAGE img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: skew(15deg);
+    transition: all 0.2s ease-in-out;
+    background-color: blue;
+    opacity: 0.5;
+}
+.ABOUT_IMAGE img:hover{
+    transform: skew(0deg);
+}
+.ABOUT_CONTENT{
+    padding: 2rem;
+    width: 50%;
+}
+.ABOUT p{
+    margin: 1.5rem 0;
+}
+.VISION{
+    display: flex;
+   /* border: 2px solid purple; */
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 3rem 0;
+    background-color: black;
+    opacity: 0.7;
+    justify-content: space-around;
+}
+.VISION_IMAGE{
+    margin: 3rem;
+}
+.VISION_IMAGE img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: skew(15deg);
+    transition: all 0.2s ease-in-out;
+}
+.VISION_IMAGE img:hover{
+    transform: skew(0deg);
+}
+.VISION_CONTENT{
+  /*  border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    width: 50%;
+}
+.MISSION{
+    display: flex;
+ /*   border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 3rem 0;
+    justify-content: space-around;
+}
+.MISSION_IMAGE{
+    margin: 3rem;
+}
+.MISSION_IMAGE img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    transform: skew(15deg);
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+.MISSION_IMAGE img:hover{
+    transform: skew(0deg);
+}
+.MISSION_CONTENT{
+  /*  border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    width: 50%;
+}
+
+
+@media screen  and (max-width:1025px){
+    .ABOUT_IMAGE img{
+        height: 300px;
+        width: 300px;
+    }
+    .ABOUT_CONTENT p{
+        font-size: 0.85rem;
+    }
+    .VISION_IMAGE img{
+        height: 300px;
+        width: 300px;
+    }
+    .VISION_CONTENT p{
+        font-size: 0.85rem;
+    }
+    .MISSION_IMAGE img{
+        height: 300px;
+        width: 300px;
+    }
+    .MISSION_CONTENT p{
+        font-size: 0.85rem;
+    }
+}
+
+@media screen  and (max-width:768px){
+    .ABOUT{
+        flex-wrap: wrap;
+    }
+    .ABOUT_IMAGE img{
+        height: 200px;
+        width: 200px;
+    }
+    .ABOUT_CONTENT{
+        width: 100%;
+    }
+    .VISION{
+        flex-wrap: wrap;
+    }
+    .VISION_IMAGE img{
+        width: 200px;
+        height: 200px;
+    }
+    .VISION_CONTENT{
+        width: 100%;
+    }
+    .MISSION{
+        flex-wrap: wrap;
+    }
+    .MISSION_IMAGE img{
+        width: 200px;
+        height: 200px;
+    }
+    .MISSION_CONTENT{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .ABOUT_CONTENT p{
+        font-size: 0.65rem;
+    }
+    .ABOUT_IMAGE img{
+        width: 150px;
+        height: 150px;
+    }
+    .VISION_CONTENT p{
+        font-size: 0.65rem;
+    }
+    .VISION_IMAGE img{
+        width: 150px;
+        height: 150px;
+    }
+    .MISSION_CONTENT p{
+        font-size: 0.65rem;
+    }
+    .MISSION_IMAGE img{
+        width: 150px;
+        height: 150px;
+    }
+}
